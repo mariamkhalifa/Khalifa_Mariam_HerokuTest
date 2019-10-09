@@ -11,16 +11,64 @@
     <main>
         <h1 class="hidden">Imaginary Awesome Product</h1>
         <header>
-            <img src="images/logo.svg" alt="logo">
-            <nav class="mainNav">
+            <img src="images/logo.png" alt="logo">
+            <nav class="main-nav">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#buy">Order</a></li>
                 </ul>
             </nav>
         </header>
-    
+        <section id="hero">
+            <h2>Roomba&#0174 614 Robot Vaccuum</h2>
+            <h3>Cleans hard, so you don’t have to.</h3>
+            <p>Innovating for over 25 years, iRobot® products are engineered to make everyday clean your reality. The Roomba 600 series is a great place to start cleaning your home smarter, and starting at $399.99, the price point is smart too.</p>
+            <button>Place Order</button>
+        </section>
+        <section id="features">
+            <h2>Product Features</h2>
+            <section class="feature odd">
+                <h3>Two brushes that totally get teamwork.</h3>
+                <p>Dual Multi-Surface Brushes work together to grab dust, dirt, and large debris to help thoroughly clean your floors. The first brush loosens, lifts, and pulls in dust, dirt, and hair from floors and in carpet, the second accelerates debris into the suction channel.</p>
+                <img src="images/feature1.jpg" alt="product img">
+            </section>
+            <section class="feature even">
+                <h3>Dirt and dust can’t hide.</h3>
+                <p>The 3-Stage Cleaning System packs a serious punch when it comes to messes. With Dual Multi-Surface Brushes and a specially designed Edge-Sweeping Brush, no crumb is safe.</p>
+                <img src="images/feature2.jpg" alt="product img">
+            </section>
+            <section class="feature odd">
+                <h3>Needs no time adjusting.</h3>
+                <p>The Auto-Adjust Cleaning Head adapts its height to keep the Dual Multi-Surface Brushes in close contact with different floor surfaces, directly engaging with both hard floors and carpets.</p>
+                <img src="images/feature3.jpg" alt="product img">
+            </section>
+            <section class="feature even">
+                <h3>Senses and eliminates dirt.</h3>
+                <p>Dirt Detect sensors alert your robot about dirtier areas of your home, then clean them more thoroughly, so high-traffic spots stay as clean as the rest of the house.</p>
+                <img src="images/feature4.jpg" alt="product img">
+            </section>
+            <section class="feature odd">
+                <h3>Take cleaning to the edge.</h3>
+                <p>The Edge-Sweeping Brush is specially designed at a 27-degree angle to sweep debris away from edges and corners.</p>
+                <img src="images/feature5.jpg" alt="product img">
+            </section>
+        </section>
+        <section id="order">
+            <h2>Place Order</h2>
+            <p>some text</p>
+            <form id="order-form">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone" required>
+                <input type="text" placeholder="Street Address" required>
+                <button>PLACE ORDER</button>
+            </form>
+        </section>
+        <footer id="main-footer">
+            <p>iRobot&#0174 2019</p>
+        </footer>
     </main> 
     <script src="js/main.js"></script>
 </body>
