@@ -1,0 +1,22 @@
+{
+  "name": "khalifa_mariam_herokutest",
+  "version": "1.0.0",
+  "description": "authoring class hw1. simple build suing node and expressjs and heroku deploy",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariamkhalifa/Khalifa_Mariam_HerokuTest.git"
+  },
+  "author": "mariam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariamkhalifa/Khalifa_Mariam_HerokuTest/issues"
+  },
+  "homepage": "https://github.com/mariamkhalifa/Khalifa_Mariam_HerokuTest#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
