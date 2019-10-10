@@ -1,0 +1,25 @@
+$font-header: 'Oswald', sans-serif;
+$font-p: 'Quicksand', sans-serif;
+$bg-color: #101010;
+$font-color:#e1e1e1;
+$green: #64a70b;
+
+@mixin row {
+    display: flex;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+  }

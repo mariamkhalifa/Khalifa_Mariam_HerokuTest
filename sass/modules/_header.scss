@@ -1,0 +1,157 @@
+#main-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 350px;
+    @include column;
+}
+
+.main-nav {
+    order: -1;
+    align-items: center;
+}
+
+.burger {
+    width: 40px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.burger.rotated {
+    @include transform(rotate(90deg));
+}
+
+.nav {
+    display: none;
+    li {
+        margin-top: 8px;
+    }
+    a {
+        transition: all .5s ease;
+    }
+    a:hover {
+        color: $green;
+        text-decoration: underline;
+    }
+}
+
+.nav.visible {
+    display: block;
+    @include column;
+    text-align: center;
+    padding: 0;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.title {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 40px 0;
+}
+
+.logo {
+    width: 150px;
+    margin: 10px;
+}
+
+#hero {
+    line-height: 30px;
+    padding-top: 5px;
+    text-align: center;
+    h3 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    p {
+        margin: 0 20px;
+    }
+    button {
+        background-color: $bg-color;
+        margin-top: 20px;
+        padding: 10px;
+        border: solid 1px $green;
+        cursor: pointer;
+        color: $font-color;
+        margin-bottom: 40px;
+        transition: all 1s ease;
+    }
+    button:hover {
+        background-color: $green;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #main-header {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+     height: 400px;
+     }
+     
+ }
+ 
+ @media screen and (min-width: 787px) {
+     #main-header {
+         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         position: relative;
+         height: 510px;
+     }
+
+     #hero {
+         p {
+            padding: 0 40px;
+         }
+         button {
+             padding: 10px 40px;
+             margin-top: 30px;
+         }
+     } 
+      
+  }
+
+@media screen and (min-width: 1025px) {
+    .burger {
+        display: none;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+
+    .main-nav ul {
+        display: block !important;
+        margin: 0;
+        li {
+            display: inline;
+            padding: 10px;
+        }
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    #hero button {
+        font-size: 16px;
+        padding: 10px 50px;
+    }
+
+    #hero p {
+        padding: 20px 200px;
+    }
+}
