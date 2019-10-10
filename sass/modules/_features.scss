@@ -1,0 +1,44 @@
+#features {
+    @include column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 40px;
+    img {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 787px) {
+    #features {
+        img {
+            margin-top: 40px;
+            // margin-left: auto;
+            // margin-right: auto;
+        }
+        p {
+            padding: 0 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .feature {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .feature-text {
+        padding-top: 60px;
+        p {
+            padding-top: 40px !important;
+        }
+    }
+
+    .odd {
+        .feature-text {
+            order: -1;
+        }
+    }
+}

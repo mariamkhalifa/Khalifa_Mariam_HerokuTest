@@ -1,0 +1,72 @@
+@import '_vars';
+@import 'modules/_header';
+@import 'modules/_features';
+@import 'modules/_order';
+
+html {
+    scroll-behavior: smooth;
+}
+
+img, embed, object, video {
+    max-width: 100%;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+body, a, input {
+    font-family: $font-p;
+    color: $font-color;
+}
+
+h1, h2, h3, h4 {
+    font-family: $font-header;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+h3 {
+    font-size: 26px;
+    line-height: 26px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+body {
+    background-color: $bg-color;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 1025px) {
+    h2 {
+        font-size: 44px;
+    }
+    h3 {
+        font-size: 36px;
+    }
+    p, a {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

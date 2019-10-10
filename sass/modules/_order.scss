@@ -1,0 +1,51 @@
+#order {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba($color: #333333, $alpha: .3);
+}
+
+#order-form {
+    @include column;
+    input {
+        margin-top: 10px;
+        background-color: rgba($color: #666666, $alpha: .5);
+        border: none;
+        padding: 5px;
+    }
+    button {
+        background-color: rgba($color: #333333, $alpha: .3);
+        margin-top: 20px;
+        padding: 10px;
+        border: solid 1px $green;
+        cursor: pointer;
+        color: $font-color;
+        margin-bottom: 40px;
+        transition: all 1s ease;
+    }
+    button:hover {
+        background-color: $green;
+    }
+}
+
+#main-footer {
+    text-align: center;
+    background-color: black;
+    padding: 5px;
+}
+
+@media screen and (min-width: 787px) {
+    #order {
+        padding: 50px 100px;
+        p {
+            padding: 20px 10px; 
+        }
+    }
+
+    #order-form input {
+        padding: 10px;
+    }
+
+    #order-form button {
+        padding: 15px;
+    }
+}
